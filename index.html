@@ -336,6 +336,122 @@
 
 						 <ul>
   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Modules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        .module-list {
+            list-style: none;
+            padding: 0;
+        }
+        .module-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e9f7fc;
+            border-left: 5px solid #0056b3;
+            transition: background 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+        .module-list li:hover {
+            background: #cdeffc;
+            transform: scale(1.02);
+        }
+        .module-description {
+            display: none;
+            padding: 10px;
+            margin-top: 5px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Key Modules</h2>
+        <ul class="module-list">
+            <li onclick="toggleDescription(this)">
+                Internet and Cloud Computing
+                <div class="module-description">
+                    Learn about the fundamentals of cloud computing, its services, and the impact of the internet on modern computing.
+                </div>
+            </li>
+            <li onclick="toggleDescription(this)">
+                Mobile and Web Applications
+                <div class="module-description">
+                    Design and develop mobile and web applications using modern frameworks and best practices.
+                </div>
+            </li>
+            <li onclick="toggleDescription(this)">
+                UI & UX
+                <div class="module-description">
+                    Study the principles of user interface and user experience design to create intuitive and effective user interactions.
+                </div>
+            </li>
+            <li onclick="toggleDescription(this)">
+                Computational Intelligence and Software Engineering
+                <div class="module-description">
+                    Explore computational intelligence techniques and their applications in software engineering for intelligent system development.
+                </div>
+            </li>
+            <li onclick="toggleDescription(this)">
+                Data-Driven Intelligent Service Design
+                <div class="module-description">
+                    Focus on designing intelligent services and applications driven by data analytics and machine learning techniques.
+                </div>
+            </li>
+            <li onclick="toggleDescription(this)">
+                Generative Development
+                <div class="module-description">
+                    Learn about generative programming and development techniques for creating adaptable and efficient software systems.
+                </div>
+            </li>
+            <li onclick="toggleDescription(this)">
+                Design and Analysis of Algorithms
+                <div class="module-description">
+                    Study the design, analysis, and implementation of efficient algorithms to solve complex computational problems.
+                </div>
+            </li>
+            <li onclick="toggleDescription(this)">
+                Personal and Group Skills
+                <div class="module-description">
+                    Develop essential personal and group skills for effective teamwork, communication, and project management in software development.
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleDescription(element) {
+            var description = element.querySelector('.module-description');
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+
+
 
 	   				</div>
 
